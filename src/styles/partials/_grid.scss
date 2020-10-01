@@ -12,3 +12,21 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+@mixin desktopColumnGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 4.25rem);
+    grid-column-gap: 1.5rem;
+}
+
+@mixin tabletColumnGrid {
+    display: grid;
+    grid-template-rows: repeat(6, 6.25rem);
+    grid-column-gap: 1.5rem;
+}
+
+@mixin mobileColumnGrid {
+    display: grid;
+    grid-template-rows: repeat(4, 3.375rem);
+    grid-column-gap: 1.5rem;
+}
